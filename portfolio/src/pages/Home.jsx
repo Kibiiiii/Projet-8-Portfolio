@@ -6,9 +6,9 @@ function Home() {
     return (
         <div>
             <Banner title="Neary Casolari" />
-            <Inserts title="A Propos"/>
+            <Inserts title="À propos"/>
             <Inserts title="Mes Projets"/>
-            <Inserts title="Mes Competences"/>
+            <Inserts title="Mes Compétences"/>
         </div>
     );
 }

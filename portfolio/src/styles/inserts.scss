@@ -7,12 +7,11 @@ $gallery-bg: rgba(246, 246, 246, 1);
 
 .inserts-home {
     position: relative;
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden; 
-    background: $gallery-bg; 
     border-radius: 10px;
 }
 
@@ -24,9 +23,6 @@ $gallery-bg: rgba(246, 246, 246, 1);
     transform: translate(-50%, -50%);
     color: $secondary-color;
     font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    z-index: 2;
     text-shadow: -1px -1px 0 $primary-color, 
     1px -1px 0 $primary-color, 
     -1px 1px 0 $primary-color, 
@@ -40,12 +36,16 @@ $gallery-bg: rgba(246, 246, 246, 1);
     @media (max-width: 768px) {
         font-size: 20px;
     }
-
+    @media (max-width: 670px) {
+        font-size: 15px;
+    }
     @media (max-width: 480px) {
         font-size: 10px;
     }
-
-    @media (max-width: 320px) {
+    @media (max-width: 400px) {
         font-size: 8px;
+    }
+    @media (max-width: 320px) {
+        font-size: 5px;
     }
 }

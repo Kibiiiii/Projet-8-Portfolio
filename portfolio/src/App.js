@@ -9,6 +9,7 @@ import Home from "./pages/Home.jsx";
 import "./styles/app.scss";
 import "./styles/home.scss";
 import './styles/inserts.scss';
+import './styles/chibi.scss'
 // import "./styles/about.scss";
 
 const App = () => {
