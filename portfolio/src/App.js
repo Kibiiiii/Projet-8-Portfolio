@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Navigation from "./components/Navigation.jsx";
-// import Footer from "./components/Footer.jsx";
+import Footer from "./components/Footer.jsx";
 // import Error404 from "./pages/Error404.jsx";
 import Home from "./pages/Home.jsx";
 // import About from "./pages/About.jsx";
@@ -24,7 +23,7 @@ const App = () => {
                         {/* <Route path="*" element={<Error404 />} /> */}
                     </Routes>
                 </div>
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </Router>
     );

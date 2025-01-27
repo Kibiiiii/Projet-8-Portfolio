@@ -5,6 +5,11 @@ import ChibisKibi from '../components/Chibi-Home.jsx';
 import chibiKibi from '../assets/images/chibi-kibi.png';
 import chibiKibiHearts from '../assets/images/chibi-kibi-hearts.png';
 import chibiKibiHey from '../assets/images/chibi-kibi-hey.png';
+import FooterLink from '../components/Footer.jsx';
+import footerLinkInstagram from '../assets/images/instagram.png';
+import footerLinkLinkedin from '../assets/images/linkedin.png';
+import footerLinkGithub from '../assets/images/github.png';
+
 
 function Home() {
     return (
@@ -15,15 +20,26 @@ function Home() {
             <div className="inserts-container">
                 <div className="insert-item">
                     <Inserts title="À propos" />
-                    <ChibisKibi image={chibiKibi} /> {/* Passer l'image chibiKibi */}
+                    <ChibisKibi image={chibiKibi} />
                 </div>
                 <div className="insert-item">
                     <Inserts title="Mes Projets" />
-                    <ChibisKibi image={chibiKibiHearts} /> {/* Passer l'image chibiKibiHearts */}
+                    <ChibisKibi image={chibiKibiHearts} />
                 </div>
                 <div className="insert-item">
                     <Inserts title="Mes Compétences" />
-                    <ChibisKibi image={chibiKibiHey} /> {/* Passer l'image chibiKibiHey */}
+                    <ChibisKibi image={chibiKibiHey} /> 
+                </div>
+            </div>
+            <div className='footer-links'>
+                <div className='link-item'>
+                <FooterLink image={footerLinkInstagram} />
+                </div>
+                <div className='link-item'>
+                <FooterLink image={footerLinkLinkedin} />
+                </div>
+                <div className='link-item'>
+                <FooterLink image={footerLinkGithub} />
                 </div>
             </div>
         </>

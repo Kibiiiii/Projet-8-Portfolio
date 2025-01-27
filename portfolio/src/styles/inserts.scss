@@ -9,6 +9,11 @@ $gallery-bg: rgba(246, 246, 246, 1);
     position: relative;
     width: 100%;
     cursor: pointer;
+    transition: transform 0.2s ease; /* Réduction de la durée à 0.2s */
+
+    &:hover {
+        transform: scale(1.05); /* Réduction du zoom */
+    }
 }
 
 .insert-title {
@@ -89,7 +94,6 @@ $gallery-bg: rgba(246, 246, 246, 1);
                 }
         }
 }
-
 
 .chibi-kibi img {
     width: 100%;
