@@ -49,3 +49,27 @@ $gallery-bg: rgba(246, 246, 246, 1);
         font-size: 5px;
     }
 }
+
+.inserts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.insert-item {
+    display: flex; /* Aligner le titre et l'image horizontalement */
+    padding: 20px; /* Ajouter un peu de padding pour agrandir l'insert */
+    border-radius: 10px; /* Arrondir les bords de l'insert */
+    width: 100%;
+}
+
+.insert-item img {
+    max-width: 100px; /* Augmenter la taille de l'image */
+    height: auto; /* Garder les proportions */
+}
+
+.chibi-kibi img {
+    margin-top: 20px; /* Ajouter une marge pour déplacer l'image vers le bas */
+}
+
+
