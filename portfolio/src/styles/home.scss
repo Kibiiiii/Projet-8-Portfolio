@@ -1,8 +1,8 @@
-$primary-font: 'Montserrat';
+$primary-font: 'Sour_Gummy';
 $primary-color: black;
 $secondary-color: white;
 $box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-$banner-overlay: rgba(0, 0, 0, 0.5);
+$banner-overlay: rgba(0, 0, 0, 0.3);
 $gallery-bg: rgba(246, 246, 246, 1);
 
     .logo-header {
@@ -138,7 +138,7 @@ $gallery-bg: rgba(246, 246, 246, 1);
         justify-content: center; 
         align-items: center;
         color: $secondary-color;
-        font-size: 40px;
+        font-size: 55px;
         font-weight: bold;
         text-align: center;
         background-color: $banner-overlay;

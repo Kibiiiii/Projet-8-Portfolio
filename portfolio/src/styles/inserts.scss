@@ -1,0 +1,34 @@
+$primary-font: 'Sour_Gummy';
+$primary-color: black;
+$secondary-color: white;
+$box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$banner-overlay: rgba(0, 0, 0, 0.3);
+$gallery-bg: rgba(246, 246, 246, 1);
+
+.inserts-home {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    background: $gallery-bg; 
+    border-radius: 10px;
+}
+
+.insert-title {
+    font-family: $primary-font;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $secondary-color;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    text-shadow: -1px -1px 0 $primary-color, 
+    1px -1px 0 $primary-color, 
+    -1px 1px 0 $primary-color, 
+    1px 1px 0 $primary-color;
+}

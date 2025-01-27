@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Montserrat;
-    src: url(../assets/font/Montserrat-Medium.ttf);
+    font-family: Sour_Gummy;
+    src: url(../assets/font/Montserrat,Sour_Gummy/Sour_Gummy/SourGummy-VariableFont_wdth,wght.ttf);
     }
 
     * {
@@ -27,7 +27,7 @@
     }
 
     ul {
-        font-family: Montserrat;
+        font-family: Sour_Gummy;
         display: flex;
         flex-direction: column;
         gap: 10px;

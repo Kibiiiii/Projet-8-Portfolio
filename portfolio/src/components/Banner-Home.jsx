@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/home.scss'
 import bannerImage from '../assets/images/banner-accueil.jpg';
 
 function BannerHome({ title }) {
