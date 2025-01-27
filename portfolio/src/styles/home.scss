@@ -191,7 +191,8 @@ $gallery-bg: rgba(246, 246, 246, 1);
         display: flex;
         justify-content: center; /* Aligne les liens horizontalement au centre */
         align-items: center; /* Centre les éléments verticalement */
-        
+        margin-top: -60px; /* Remonte le footer */
+    
         @media (max-width: 768px) {
             gap: 20px;
             padding: 15px;
@@ -209,7 +210,6 @@ $gallery-bg: rgba(246, 246, 246, 1);
     
             img {
                 width: 400px; /* Taille des icônes */
-                height: 400px; /* Taille des icônes */
                 object-fit: contain;
                 cursor: pointer;
                 transition: transform 0.3s ease; /* Animation au survol */
@@ -230,6 +230,7 @@ $gallery-bg: rgba(246, 246, 246, 1);
             }
         }
     }
+    
     
 
 
