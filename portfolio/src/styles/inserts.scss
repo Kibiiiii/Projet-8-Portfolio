@@ -7,39 +7,41 @@ $gallery-bg: rgba(246, 246, 246, 1);
 
 .inserts-home {
     position: relative;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; 
-    border-radius: 10px;
+    width: 100%;
+        img {
+            
+        }
 }
 
 .insert-title {
     font-family: $primary-font;
     position: absolute;
-    top: 50%; 
-    left: 50%;
+    top: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
     color: $secondary-color;
     font-size: 50px;
-    text-shadow: -1px -1px 0 $primary-color, 
-    1px -1px 0 $primary-color, 
-    -1px 1px 0 $primary-color, 
+    text-shadow: -1px -1px 0 $primary-color,
+    1px -1px 0 $primary-color,
+    -1px 1px 0 $primary-color,
     1px 1px 0 $primary-color;
-    @media (max-width: 1400px) {
+
+    @media (max-width: 1600px) {
         font-size: 40px;
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 1314px) {
         font-size: 30px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1080px) {
         font-size: 20px;
     }
-    @media (max-width: 670px) {
+    @media (max-width: 812px) {
+        font-size: 18px;
+    }
+    @media (max-width: 754px) {
         font-size: 15px;
     }
-    @media (max-width: 480px) {
+    @media (max-width: 680px) {
         font-size: 10px;
     }
     @media (max-width: 400px) {
@@ -53,23 +55,47 @@ $gallery-bg: rgba(246, 246, 246, 1);
 .inserts-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center; /* Centre les items horizontalement */
+    padding: 20px; /* Padding autour de la section */
 }
 
 .insert-item {
-    display: flex; /* Aligner le titre et l'image horizontalement */
-    padding: 20px; /* Ajouter un peu de padding pour agrandir l'insert */
-    border-radius: 10px; /* Arrondir les bords de l'insert */
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacement entre le texte et l'image */
+    width: 80%;
+    max-width: 1200px;
 }
 
-.insert-item img {
-    max-width: 100px; /* Augmenter la taille de l'image */
-    height: auto; /* Garder les proportions */
+.chibi-kibi {
+    width: 220px;
+    height: auto; /* Préserve les proportions */
+    @media (max-width: 1400px) {
+        width: 180px;
+        padding: 20px;
+    }
+    @media (max-width: 1024px) {
+        width: 150px;
+        padding: 20px;
+    }
+    @media (max-width: 768px) {
+        width: 100px;
+        padding: 20px;
+    @media (max-width: 400px) {
+        width: 80px;
+        padding: 20px;
+    }
+    @media (max-width: 320px) {
+        width: 20px;
+    }
+}
 }
 
 .chibi-kibi img {
-    margin-top: 20px; /* Ajouter une marge pour déplacer l'image vers le bas */
+    width: 100%; /* S'adapte à la largeur du conteneur */
+    height: auto;
 }
+
+
 
 
