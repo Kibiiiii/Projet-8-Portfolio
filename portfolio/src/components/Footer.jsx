@@ -2,8 +2,8 @@ import React from 'react';
 
 function FooterLink({ image, link }) {
     if (!image) {
-        console.log("Aucune image fournie à FooterLink !");
-        return null; // N'affiche rien si l'image est manquante
+        console.log();
+        return null;
     }
 
     return (

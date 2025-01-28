@@ -10,6 +10,9 @@ import FooterLink from '../components/Footer.jsx';
 import footerLinkInstagram from '../assets/images/instagram.png';
 import footerLinkLinkedin from '../assets/images/linkedin.png';
 import footerLinkGithub from '../assets/images/github.png';
+import footerLinkCv from '../assets/images/cv.png';
+import footerLinkContact from '../assets/images/contact.png';
+
 
 function Home() {
     return (
@@ -38,6 +41,18 @@ function Home() {
                 </div>
             </div>
             <div className="footer-links">
+            <div className="link-item">
+                    <FooterLink 
+                        image={footerLinkCv} 
+                        link="" 
+                    />
+                </div>
+                <div className="link-item">
+                    <FooterLink 
+                        image={footerLinkContact} 
+                        link="" 
+                    />
+                </div>
                 <div className="link-item">
                     <FooterLink 
                         image={footerLinkInstagram} 
