@@ -9,12 +9,21 @@ $gallery-bg: rgba(246, 246, 246, 1);
     position: relative;
     width: 100%;
     cursor: pointer;
-    transition: transform 0.2s ease; /* Réduction de la durée à 0.2s */
-
-    &:hover {
-        transform: scale(1.05); /* Réduction du zoom */
+    transition: transform 0.2s ease; // Réduction de la durée à 0.2s
+        @media (max-width: 497px) {
+            width: 100%;
+                @media (max-width: 400px) {
+                    width: 100%;
+                        @media (max-width: 320px) {
+                            width: 100%;
+                        }
+                }
+        &:hover {
+        transform: scale(1.05); // Réduction du zoom
+        }
     }
 }
+
 
 .insert-title {
     font-family: $primary-font;
@@ -41,16 +50,19 @@ $gallery-bg: rgba(246, 246, 246, 1);
                                             font-size: 15px;
                                                 @media (max-width: 680px) {
                                                     font-size: 10px;
+                                                    @media (max-width: 497px) {
+                                                        font-size: 8px;
                                                         @media (max-width: 400px) {
-                                                            font-size: 8px;
+                                                            font-size: 6px;
                                                                 @media (max-width: 320px) {
                                                                     font-size: 5px;
                                                                 }
                                                         }
+                                                    }
                                                 }
                                         }
                                 }
-                        }
+                        }       
                 }
         }
 }
@@ -59,14 +71,12 @@ $gallery-bg: rgba(246, 246, 246, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 
 .insert-item {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    width: 80%;
     max-width: 1200px;
 }
 
@@ -75,19 +85,19 @@ $gallery-bg: rgba(246, 246, 246, 1);
     height: auto;
     cursor: pointer;
         @media (max-width: 1400px) {
-            width: 180px;
+            width: 220px;
             padding: 20px;
                 @media (max-width: 1024px) {
-                    width: 150px;
+                    width: 220px;
                     padding: 20px;
                         @media (max-width: 768px) {
-                            width: 100px;
+                            width: 220px;
                             padding: 20px;
                                 @media (max-width: 400px) {
-                                    width: 80px;
+                                    width: 220px;
                                     padding: 20px;
                                         @media (max-width: 320px) {
-                                            width: 20px;
+                                            width: 220px;
                                         }
                                 }
                         }
