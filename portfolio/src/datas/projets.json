@@ -1,0 +1,15 @@
+[
+	{
+		"id": "mk1",
+		"title": "Booki",
+		"cover": "",
+		"pictures": [
+		],
+		"description": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS".
+				mission principale sera d'intégrer l'interface responsive de leur site. Vous aurez à disposition les maquettes Figma pour mobile, tablette et desktop, ainsi que les images et une note de synthèse sur les 				spécificités du projet.",
+		"technologies utilisées": "HTML, CSS, Github",
+		"Objectifs": " - Implémenter une interface responsive avec HTML et CSS"
+				" - Intégrer du contenu conformément à une maquette avec HTML et CSS"
+				" - Versionner son projet avec Git et Github"
+				" - Installer un environnement de développement front-end",
+	},

@@ -31,15 +31,24 @@ function Home() {
                     <ChibisKibi image={chibiKibiHey} /> 
                 </div>
             </div>
-            <div className='footer-links'>
-                <div className='link-item'>
-                <FooterLink image={footerLinkInstagram} />
+            <div className="footer-links">
+                <div className="link-item">
+                    <FooterLink 
+                        image={footerLinkInstagram} 
+                        link="https://www.instagram.com/kibishiii_/?hl=fr" 
+                    />
                 </div>
-                <div className='link-item'>
-                <FooterLink image={footerLinkLinkedin} />
+                <div className="link-item">
+                    <FooterLink 
+                        image={footerLinkLinkedin} 
+                        link="https://www.linkedin.com/in/neary-nc-9bb7a5297/" 
+                    />
                 </div>
-                <div className='link-item'>
-                <FooterLink image={footerLinkGithub} />
+                <div className="link-item">
+                    <FooterLink 
+                        image={footerLinkGithub} 
+                        link="https://github.com/Kibiiiii" 
+                    />
                 </div>
             </div>
         </>
@@ -47,6 +56,7 @@ function Home() {
 }
 
 export default Home;
+
 
 
 

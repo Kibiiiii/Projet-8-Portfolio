@@ -203,42 +203,41 @@ $gallery-bg: rgba(246, 246, 246, 1);
             padding: 10px;
         }
     }  
-        .link-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
-            img {
-                width: 400px;
-                object-fit: contain;
-                cursor: pointer;
-                transition: transform 0.3s ease;
-        
-                &:hover {
-                    animation: rotate-animation 1s infinite linear; /* Animation continue */
-                }
-        
-                @media (max-width: 768px) {
-                    width: 40px;
-                    height: 40px;
-                }
-        
-                @media (max-width: 480px) {
-                    width: 30px;
-                    height: 30px;
-                }
+
+    .link-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        img {
+            width: 400px;
+            object-fit: contain;
+            cursor: pointer;
+    
+            &:hover {
+                animation: rotate-animation 5s infinite linear; /* Animation ralentie à 5 secondes */
             }
-        
-            @keyframes rotate-animation {
-                0% {
-                    transform: rotate(0deg);
-                }
-                100% {
-                    transform: rotate(360deg); /* Rotation complète */
-                }
+    
+            @media (max-width: 768px) {
+                width: 40px;
+                height: 40px;
+            }
+    
+            @media (max-width: 480px) {
+                width: 30px;
+                height: 30px;
             }
         }
-        
+    
+        @keyframes rotate-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg); /* Rotation complète */
+            }
+        }
+    }
     
 
 
