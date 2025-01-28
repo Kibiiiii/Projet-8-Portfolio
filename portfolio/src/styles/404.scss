@@ -1,82 +1,81 @@
-.not-found-container {
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-.not-found-title {
-    font-family: Sour_Gummy;
-    font-size: 288px;
-    font-weight: 700;
-    line-height: 410px;
-    color: #ca8787;
-        @media (max-width: 768px) {
-            font-size: 200px;
-                @media (max-width: 500px) {
-                    font-size: 150px;
-                        @media (max-width: 400px) {
-                            font-size: 100px;
-                        }     
-                }
-        }
-}
-
-.not-found-text {
-    font-family: Sour_Gummy;
-    font-size: 25px;
-    padding-bottom: 50px;
-    color: #ca8787;
-        @media (max-width: 768px) {
-            font-size: 18px;
-                @media (max-width: 500px) {
-                    font-size: 14px;
-                    padding-bottom: 25px;
-                }    
-        }
-}
-
-.not-found-link {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    font-family: Sour_Gummy;
-    text-decoration: none;
-    color: #ca8787;
-    font-size: 16px;
-    transition: transform 0.3s ease;
-}
-
-.not-found-link:hover {
-    transform: scale(1.05); /* Zoom sur tout le lien au survol */
-}
-
-.cherry-blossom-icon {
-    width: 500px; /* Ajustez la taille de l'icône */
-    height: auto;
-    &:hover {
-        animation: rotate-animation 5s infinite linear; /* Animation ralentie à 5 secondes */
+    .not-found-container {
+        text-align: center;
+        padding-bottom: 40px;
     }
 
-    @media (max-width: 768px) {
-        width: 40px;
-        height: 40px;
+    .not-found-title {
+        font-family: Sour_Gummy;
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 410px;
+        color: #ca8787;
+            @media (max-width: 768px) {
+                font-size: 200px;
+                    @media (max-width: 500px) {
+                        font-size: 150px;
+                            @media (max-width: 400px) {
+                                font-size: 100px;
+                            }
+                    }
+            }
     }
 
-    @media (max-width: 480px) {
-        width: 30px;
-        height: 30px;
+    .not-found-text {
+        font-family: Sour_Gummy;
+        font-size: 25px;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+        color: #ca8787;
+            @media (max-width: 768px) {
+                font-size: 18px;
+                    @media (max-width: 500px) {
+                        font-size: 14px;
+                        margin-bottom: 15px;
+                    }
+            }
     }
-}
 
-@keyframes rotate-animation {
-    0% {
+    .not-found-link {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-family: Sour_Gummy;
+        text-decoration: none;
+        color: #ca8787;
+        font-size: 16px;
+        gap: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
+        transition: transform 0.3s ease;
+            &:hover {
+                transform: scale(1.05);
+            }
+    }
+
+    .cherry-blossom-icon {
+        height: auto;
+        margin-top: 10px;
+        width: 300px;
+            &:hover {
+                animation: rotate-animation 1s infinite linear;
+                    @media (max-width: 768px) {
+                        width: 80px;
+                            @media (max-width: 480px) {
+                                width: 60px;
+                            }
+                    }
+            }
+    }
+
+    @keyframes rotate-animation {
+        0% {
         transform: rotate(0deg);
+        }
+        100% {
+        transform: rotate(360deg);
+        }
     }
-    100% {
-        transform: rotate(360deg); /* Rotation complète */
+    
+    .not-found-link:hover .cherry-blossom-icon {
+        transform: rotate(10deg);
     }
-}
-
-
-.not-found-link:hover .cherry-blossom-icon {
-    transform: rotate(10deg); /* Petite rotation de l'icône au survol */
-}
