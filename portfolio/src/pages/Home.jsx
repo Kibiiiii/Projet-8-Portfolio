@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Banner from "../components/Banner-Home.jsx";
 import Inserts from "../components/Inserts-Home.jsx";
 import ChibisKibi from '../components/Chibi-Home.jsx';
@@ -10,7 +11,6 @@ import footerLinkInstagram from '../assets/images/instagram.png';
 import footerLinkLinkedin from '../assets/images/linkedin.png';
 import footerLinkGithub from '../assets/images/github.png';
 
-
 function Home() {
     return (
         <>
@@ -19,16 +19,22 @@ function Home() {
             </div>
             <div className="inserts-container">
                 <div className="insert-item">
-                    <Inserts title="À propos" />
+                <Link to="/aboutme" className="about-me-link">
+                        <Inserts title="À propos" />
+                    </Link>
                     <ChibisKibi image={chibiKibi} />
                 </div>
                 <div className="insert-item">
-                    <Inserts title="Mes Projets" />
+                <Link to="/projets/:id" className="projets-link">
+                        <Inserts title="Mes Projets" />
+                    </Link>
                     <ChibisKibi image={chibiKibiHearts} />
                 </div>
                 <div className="insert-item">
-                    <Inserts title="Mes Compétences" />
-                    <ChibisKibi image={chibiKibiHey} /> 
+                    <Link to="/skills" className="skills-link">
+                        <Inserts title="Mes Compétences" />
+                    </Link>
+                    <ChibisKibi image={chibiKibiHey} />
                 </div>
             </div>
             <div className="footer-links">
@@ -56,6 +62,7 @@ function Home() {
 }
 
 export default Home;
+
 
 
 
