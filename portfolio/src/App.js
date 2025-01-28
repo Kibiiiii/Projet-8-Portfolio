@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ErrorBoundary from './components/ErrorBoundary';
 import Footer from "./components/Footer.jsx";
 import ContactForm from './components/Contact-Form.jsx';
 import Error404 from "./pages/Error404.jsx";
@@ -19,7 +18,6 @@ import "./styles/404.scss";
 const App = () => {
     return (
         <Router>
-            <ErrorBoundary>
             <div>
                 <div className="main-content">
                     <Routes>
@@ -33,7 +31,6 @@ const App = () => {
                 </div>
                 <Footer />
             </div>
-            </ErrorBoundary>
         </Router>
     );
 };

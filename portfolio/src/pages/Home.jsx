@@ -25,7 +25,6 @@ function Home() {
                     className="background-video"
                 >
                     <source src="/videos/background-video.mp4" type="video/mp4" />
-                    Votre navigateur ne supporte pas les vidéos.
                 </video>
             </div>
 
