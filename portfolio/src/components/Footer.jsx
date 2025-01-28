@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FooterLink({ image, link }) {
+const FooterLink = ({ image, link }) => {
     if (!image) {
         console.log();
         return null;
@@ -9,10 +9,11 @@ function FooterLink({ image, link }) {
     return (
         <div className="footer-link">
             <a href={link} target="_blank" rel="noopener noreferrer">
-                <img src={image} alt="link" />
+                <img src={image} alt="footer link" />
             </a>
         </div>
     );
-}
+};
 
 export default FooterLink;
+

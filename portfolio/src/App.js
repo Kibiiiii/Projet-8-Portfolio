@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ErrorBoundary from './components/ErrorBoundary';
 import Footer from "./components/Footer.jsx";
+import ContactForm from './components/Contact-Form.jsx';
 import Error404 from "./pages/Error404.jsx";
 import Home from "./pages/Home.jsx";
 import AboutMe from "./pages/AboutMe.jsx";
@@ -17,6 +19,7 @@ import "./styles/404.scss";
 const App = () => {
     return (
         <Router>
+            <ErrorBoundary>
             <div>
                 <div className="main-content">
                     <Routes>
@@ -24,11 +27,13 @@ const App = () => {
                         <Route path="/aboutme" element={<AboutMe />} />
                         <Route path="/projets/:id" element={<Projets />} />
                         <Route path="/skills" element={<Skills />} /> 
+                        <Route path="/contact" element={<ContactForm />} />
                         <Route path="*" element={<Error404 />} />
                     </Routes>
                 </div>
                 <Footer />
             </div>
+            </ErrorBoundary>
         </Router>
     );
 };

@@ -13,7 +13,6 @@ import footerLinkGithub from '../assets/images/github.png';
 import footerLinkCv from '../assets/images/cv.png';
 import footerLinkContact from '../assets/images/contact.png';
 
-
 function Home() {
     return (
         <>
@@ -22,13 +21,13 @@ function Home() {
             </div>
             <div className="inserts-container">
                 <div className="insert-item">
-                <Link to="/aboutme" className="about-me-link">
+                    <Link to="/aboutme" className="about-me-link">
                         <Inserts title="À propos" />
                     </Link>
                     <ChibisKibi image={chibiKibi} />
                 </div>
                 <div className="insert-item">
-                <Link to="/projets/:id" className="projets-link">
+                    <Link to="/projets/:id" className="projets-link">
                         <Inserts title="Mes Projets" />
                     </Link>
                     <ChibisKibi image={chibiKibiHearts} />
@@ -41,16 +40,16 @@ function Home() {
                 </div>
             </div>
             <div className="footer-links">
-            <div className="link-item">
+                <div className="link-item">
                     <FooterLink 
                         image={footerLinkCv} 
-                        link="" 
+                        link="/cv.pdf"
                     />
                 </div>
                 <div className="link-item">
                     <FooterLink 
                         image={footerLinkContact} 
-                        link="" 
+                        link="/contact"
                     />
                 </div>
                 <div className="link-item">
@@ -77,6 +76,7 @@ function Home() {
 }
 
 export default Home;
+
 
 
 
