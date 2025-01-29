@@ -1,0 +1,158 @@
+$primary-font: 'Sour_Gummy';
+$primary-color: black;
+$secondary-color: white;
+$box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$banner-overlay: rgba(0, 0, 0, 0.3);
+$gallery-bg: rgba(246, 246, 246, 1);
+
+html {
+    background-color: #e4b2b3;
+}
+
+.about-me {
+    &-title {
+        font-family: 'Sour_Gummy';
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 20px;
+        color: $secondary-color;
+        text-shadow: -1px -1px 0 $primary-color, 
+        1px -1px 0 $primary-color, 
+        -1px 1px 0 $primary-color, 
+        1px 1px 0 $primary-color;
+        @media (max-width: 960px) {
+            font-size: 50px;
+            @media (max-width: 650px) {
+                font-size: 45px;
+                @media (max-width: 550px) {
+                    font-size: 40px;
+                    @media (max-width: 450px) {
+                        font-size: 30px;
+                        @media (max-width: 370px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-container {
+        display: flex; /* Aligne les éléments côte à côte */
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 800px;
+        gap: 120px;
+        margin: 0 auto;
+        top: 80px;
+        position: relative; /* Nécessaire pour le positionnement absolu du cadre */
+            @media (max-width: 960px) {
+                flex-direction: column;
+                align-items: stretch;
+                @media (max-width: 370px) {
+                    top: 0;
+                }
+        }
+    }
+
+    &-frame {
+        width: 450px;
+        height: 400px;
+        position: absolute; /* Positionné par rapport au conteneur parent */
+        top: 0;
+        left: 0;
+        z-index: 2; /* Le cadre se place au-dessus de l'image */
+        @media (max-width: 960px) {
+            left: 100px;
+            @media (max-width: 650px) {
+                width: 380px;
+                height: 340px;
+                left: 60px;
+                @media (max-width: 550px) {
+                    width: 300px;
+                    height: 280px;
+                    left: 60px;
+                    @media (max-width: 450px) {
+                        width: 250px;
+                        height: 220px;
+                        left: 30px;
+                        @media (max-width: 370px) {
+                            width: 211px;
+                            height: 150px;
+                            left: 10px;
+                            @media (max-width: 340px) {
+                                width: 180px;
+                                height: 150px;
+                                left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-text {
+        font-family: 'Sour_Gummy';
+        margin-left: 10px; /* Espace entre le texte et l'image */
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: justify;
+        max-width: 600px;
+        white-space: pre-line;
+        position: relative; /* Le texte reste dans le flux du conteneur */
+        z-index: 1;
+        top: 10px;
+        @media (max-width: 430px) {
+            top: -90px;
+            @media (max-width: 360px) {
+                top: -80px;
+                    @media (max-width: 340px) {
+                    top: -70px;
+                    }
+            }
+        }
+    }
+}
+
+.me {
+    width: 380px;
+    height: 320px;
+    top: -240px;
+    left: 20px;
+    object-fit: cover;
+    position: relative; /* Nécessaire pour que le cadre se positionne correctement par rapport à l'image */
+    z-index: 1; /* L'image est en dessous du cadre */
+        @media (max-width: 960px) {
+            top: 20px;
+            left: 120px;
+            @media (max-width: 650px) {
+                width: 320px;
+                height: 275px;
+                left: 80px;
+                @media (max-width: 550px) {
+                    width: 250px;
+                    height: 220px;
+                    left: 72px;
+                    @media (max-width: 450px) {
+                        width: 210px;
+                        height: 180px;
+                        top: 10px;
+                        left: 40px;
+                        @media (max-width: 370px) {
+                            width: 180px;
+                            height: 120px;
+                            left: 20px;
+                            @media (max-width: 340px) {
+                                width: 150px;
+                                height: 120px;
+                                left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+
