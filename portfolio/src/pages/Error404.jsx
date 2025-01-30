@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/404.scss";
-import cherryBlossomIcon from "../assets/images/cherry-blossom.png";
+import cherryBlossomIcon from "../assets/images/cherry-back.png";
 
 const Error404 = () => {
     return (

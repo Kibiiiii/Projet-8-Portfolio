@@ -1,9 +1,23 @@
 $primary-font: 'Sour_Gummy';
 $primary-color: black;
 $secondary-color: white;
-$box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$box-shadow: 
+    0px 8px 16px rgba(0, 0, 0, 0.3), 
+    0px 4px 8px rgba(0, 0, 0, 0.2);
 $banner-overlay: rgba(0, 0, 0, 0.3);
 $gallery-bg: #ffeced;
+
+.projets-title {
+    font-family: 'Sour_Gummy';
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: $secondary-color;
+    text-shadow: -1px -1px 0 $primary-color, 
+    1px -1px 0 $primary-color, 
+    -1px 1px 0 $primary-color, 
+    1px 1px 0 $primary-color;
+}
 
 .gallery {
     width: 100%;
@@ -37,7 +51,8 @@ $gallery-bg: #ffeced;
                         }   
                 }
         }
-}
+    }
+
 
 .gallery-item {
     position: relative;
@@ -71,6 +86,8 @@ $gallery-bg: #ffeced;
     border-radius: 10px;
     object-fit: cover;
     cursor: pointer;
+    box-shadow: $box-shadow;
+    transition: transform 0.2s ease;
         @media (max-width: 1440px) {
             width: 300px; 
             height: 300px;
@@ -90,6 +107,9 @@ $gallery-bg: #ffeced;
                                 }
                         }
                 }
+        }
+        &:hover {
+            transform: scale(1.05);
         }
 }
 

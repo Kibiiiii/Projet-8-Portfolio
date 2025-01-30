@@ -37,5 +37,13 @@
 	"cover": "https://github.com/Kibiiiii/Projet-8-Portfolio/blob/main/portfolio/src/assets/images/p5-mon-vieux-grimoire.png?raw=true",
 	"description": "Développer le back-end d'un site de notation de livres. Créer un serveur avec Express et de le connecter à une base de données MongoDB. Cela impliquera la mise en place de la structure du serveur et la gestion de la communication entre le serveur et la base de données.",
 	"Objectifs": "Implémenter un modèle logique de données conformément à la réglementation, Mettre en œuvre des opérations CRUD de manière sécurisée, Stocker des données de manière sécurisée."
+},
+
+{
+	"id": "mk6",
+	"title": "Menu Maker",
+	"cover": "https://github.com/Kibiiiii/Projet-8-Portfolio/blob/main/portfolio/src/assets/images/p6-menu-maker.png?raw=true",
+	"description": "Planification du développement d'un site web.",
+	"Objectifs": "Lire toutes les sections du projet et les documents liés, Prendre des notes sur ce que vous avez compris, Consulter les étapes pour vous guider, Préparer une liste de questions pour votre première session de mentorat."
 }
 ]

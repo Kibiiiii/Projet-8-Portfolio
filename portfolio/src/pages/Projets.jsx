@@ -4,6 +4,8 @@ import Datas from "../datas/projets.json";
 
 const GalleryProjets = () => {
     return (
+        <div>
+        <h1 className="projets-title">Mes Projets</h1>
         <div className="gallery">
             {Datas.map((item) => (
                 <div key={item.id} className="gallery-item">
@@ -18,6 +20,7 @@ const GalleryProjets = () => {
                 </Link>
                 </div>
             ))}
+        </div>
         </div>
     );
 };
