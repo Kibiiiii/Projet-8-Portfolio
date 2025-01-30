@@ -121,12 +121,13 @@ $gallery-bg: #ffeced;
 
 .gallery-title {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.6);
     font-family: $primary-font;
     color: $secondary-color;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 500;
     cursor: pointer;
     z-index: 2;
@@ -136,6 +137,9 @@ $gallery-bg: #ffeced;
     1px -1px 0 $primary-color, 
     -1px 1px 0 $primary-color, 
     1px 1px 0 $primary-color;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
         @media (max-width: 1024px) {
             font-size: 14px;
                 @media (max-width: 347px) {

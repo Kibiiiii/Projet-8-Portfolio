@@ -1,0 +1,66 @@
+$primary-font: 'Sour_Gummy';
+$primary-color: black;
+$secondary-color: white;
+$box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$banner-overlay: rgba(0, 0, 0, 0.3);
+$gallery-bg: rgba(246, 246, 246, 1);
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    width: 630px;
+    max-height: calc(100vh - 20px);
+    padding: 50px;
+    border-radius: 10px;
+    background: #e4b2b3;
+    overflow: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-family: $primary-font;
+    color: $secondary-color;
+    text-shadow: 
+        -1px -1px 0 $primary-color, 
+        1px -1px 0 $primary-color, 
+        -1px 1px 0 $primary-color, 
+        1px 1px 0 $primary-color;
+}
+
+.description {
+    font-family: $primary-font;
+    color: $secondary-color;
+}
+
+.objectifs {
+    font-family: $primary-font;
+    color: $secondary-color;
+    padding-top: 20px;
+}
+
+
