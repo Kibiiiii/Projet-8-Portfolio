@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Datas from "../datas/projets.json";
+import BackHome from "../components/Back-Home";
 
 const GalleryProjets = () => {
     return (
+        <>
+        <BackHome />
         <div>
         <h1 className="projets-title">Mes Projets</h1>
         <div className="gallery">
@@ -22,6 +25,7 @@ const GalleryProjets = () => {
             ))}
         </div>
         </div>
+        </>
     );
 };
 
