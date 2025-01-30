@@ -104,57 +104,6 @@ height: 100%;
             }
     }
 
-    .footer-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .link-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-            img {
-                width: 100%;
-                object-fit: contain;
-                cursor: pointer;
-                        @media (max-width: 1700px) {
-                            width: 350px;
-                                @media (max-width: 1500px) {
-                                    width: 300px;
-                                    @media (max-width: 1280px) {
-                                        width: 250px;
-                                        @media (max-width: 1065px) {
-                                            width: 200px;
-                                            @media (max-width: 860px) {
-                                                width: 150px;
-                                                @media (max-width: 650px) {
-                                                    width: 100px;
-                                                    @media (max-width: 440px) {
-                                                        width: 80px;
-                                                        @media (max-width: 360px) {
-                                                            width: 60px;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                        }
-                        &:hover {
-                            animation: rotate-animation 5s infinite linear;
-                    }
-            }
-        @keyframes rotate-animation {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    }
 
 
 

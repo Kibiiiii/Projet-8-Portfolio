@@ -14,6 +14,7 @@ import "./styles/aboutme.scss";
 import "./styles/projets.scss";
 import "./styles/skills.scss";
 import "./styles/404.scss";
+import "./styles/footer.scss";
 
 const App = () => {
     return (
