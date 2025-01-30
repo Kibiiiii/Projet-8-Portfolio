@@ -22,14 +22,17 @@ html {
         1px 1px 0 $primary-color;
         @media (max-width: 960px) {
             font-size: 50px;
+            margin-bottom: -50px;
             @media (max-width: 650px) {
                 font-size: 45px;
                 @media (max-width: 550px) {
                     font-size: 40px;
                     @media (max-width: 450px) {
-                        font-size: 30px;
+                        font-size: 25px;
+                        margin-bottom: -60px;
                         @media (max-width: 370px) {
                             font-size: 20px;
+                            margin-bottom: 10px;
                         }
                     }
                 }
@@ -71,11 +74,11 @@ html {
                 @media (max-width: 550px) {
                     width: 300px;
                     height: 280px;
-                    left: 60px;
+                    left: 30px;
                     @media (max-width: 450px) {
                         width: 250px;
                         height: 220px;
-                        left: 30px;
+                        left: 10px;
                         @media (max-width: 370px) {
                             width: 211px;
                             height: 150px;
@@ -103,13 +106,22 @@ html {
         position: relative; /* Le texte reste dans le flux du conteneur */
         z-index: 1;
         top: 10px;
-        @media (max-width: 430px) {
-            top: -90px;
-            @media (max-width: 360px) {
-                top: -80px;
-                    @media (max-width: 340px) {
+            @media (max-width: 960px) {
+            top: -50px;
+                @media (max-width: 900px) {
+                top: -40px;
+                    @media (max-width: 450px) {
                     top: -70px;
+                        @media (max-width: 430px) {
+                        top: -80px;
+                            @media (max-width: 360px) {
+                            top: -90px;
+                                @media (max-width: 340px) {
+                                top: -95px;
+                            }
+                        }
                     }
+                }   
             }
         }
     }
@@ -133,12 +145,12 @@ html {
                 @media (max-width: 550px) {
                     width: 250px;
                     height: 220px;
-                    left: 72px;
+                    left: 50px;
                     @media (max-width: 450px) {
                         width: 210px;
                         height: 180px;
                         top: 10px;
-                        left: 40px;
+                        left: 25px;
                         @media (max-width: 370px) {
                             width: 180px;
                             height: 120px;
