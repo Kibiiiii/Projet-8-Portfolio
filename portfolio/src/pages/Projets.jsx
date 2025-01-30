@@ -1,13 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Datas from "../datas/projets.json";
 
-const Projets = () => {
+const GalleryProjets = () => {
     return (
-        <div className="projets-page">
-            <h1>Mes projets</h1>
-            <p>helllooooo.</p>
-            {/* Voili voilou mes projets */}
+        <div className="gallery">
+            {Datas.map((item) => (
+                <div key={item.id} className="gallery-item">
+                    <p className="gallery-title">{item.title}</p>
+                    <Link to={`/projets/:id/${item.id}`}>
+                        <img
+                            src={item.cover}
+                            alt={item.title}
+                            className="gallery-image"
+                            onClick={() => console.log("Image clicked!")}
+                        />
+                </Link>
+                </div>
+            ))}
         </div>
     );
 };
 
-export default Projets;
+export default GalleryProjets;
