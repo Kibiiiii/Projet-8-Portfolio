@@ -17,6 +17,12 @@ $gallery-bg: #ffeced;
     1px -1px 0 $primary-color, 
     -1px 1px 0 $primary-color, 
     1px 1px 0 $primary-color;
+        @media (max-width: 600px) {
+            font-size: 40px;
+            @media (max-width: 400px) {
+                font-size: 25px;
+        }
+    }
 }
 
 .gallery {
