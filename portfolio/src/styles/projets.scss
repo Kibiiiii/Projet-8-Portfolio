@@ -1,9 +1,9 @@
 $primary-font: 'Sour_Gummy';
 $primary-color: black;
-$secondary-color: #dd9b9c;
+$secondary-color: white;
 $box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 $banner-overlay: rgba(0, 0, 0, 0.3);
-$gallery-bg: rgba(246, 246, 246, 1);
+$gallery-bg: #ffeced;
 
 .gallery {
     width: 100%;
@@ -97,6 +97,7 @@ $gallery-bg: rgba(246, 246, 246, 1);
     position: absolute;
     bottom: 10px;
     left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
     font-family: $primary-font;
     color: $secondary-color;
     font-size: 16px;
@@ -104,6 +105,11 @@ $gallery-bg: rgba(246, 246, 246, 1);
     cursor: pointer;
     z-index: 2;
     border-radius: 5px;
+    padding: 5px 10px;
+    text-shadow: -1px -1px 0 $primary-color, 
+    1px -1px 0 $primary-color, 
+    -1px 1px 0 $primary-color, 
+    1px 1px 0 $primary-color;
         @media (max-width: 1024px) {
             font-size: 14px;
                 @media (max-width: 347px) {
