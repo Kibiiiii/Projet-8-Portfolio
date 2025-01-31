@@ -1,26 +1,83 @@
+$primary-font: 'Sour_Gummy';
+$primary-color: black;
+$secondary-color: white;
+$box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$banner-overlay: rgba(0, 0, 0, 0.3);
+$gallery-bg: rgba(246, 246, 246, 1);
+
+.skills-title {
+    font-family: 'Sour_Gummy';
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: $secondary-color;
+    text-shadow: -1px -1px 0 $primary-color, 
+    1px -1px 0 $primary-color, 
+    -1px 1px 0 $primary-color, 
+    1px 1px 0 $primary-color;
+    @media (max-width: 960px) {
+        font-size: 50px;
+        margin-bottom: -50px;
+        @media (max-width: 650px) {
+            font-size: 40px;
+            @media (max-width: 550px) {
+                font-size: 30px;
+                @media (max-width: 450px) {
+                    font-size: 25px;
+                    margin-bottom: -60px;
+                    @media (max-width: 370px) {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .skills {
-    overflow: hidden; /* Cache la barre de scroll */
-    white-space: nowrap;
+    overflow: hidden;
     display: flex;
+    flex-direction: column;
+    gap: 0;
     align-items: center;
-    position: relative;
+    justify-content: center;
     width: 100%;
-    padding: 10px 0;
+    padding: 0;
 }
 
 .skills-track {
     display: flex;
-    padding-top: 80px;
-    gap: 20px; /* Espacement entre les images */
-    animation: scroll 90s linear infinite; /* Animation infinie */
+    padding-top: 50px;
+    gap: 0;
+    line-height: 0;
+    animation: scroll-left 400s linear infinite;
 }
 
-@keyframes scroll {
+.skills-track-reverse {
+    display: flex;
+    align-self: flex-start;
+    padding-top: 0;
+    gap: 0;
+    line-height: 0;
+    animation: scroll-right 400s linear infinite;
+}
+
+@keyframes scroll-left {
     from {
         transform: translateX(0);
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
     }
 }
 
@@ -29,7 +86,11 @@
 }
 
 .skills-item img {
-    height: 400px;
+    height: 300px;
     width: auto;
     object-fit: contain;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
+
