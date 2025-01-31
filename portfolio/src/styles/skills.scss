@@ -1,0 +1,35 @@
+.skills {
+    overflow: hidden; /* Cache la barre de scroll */
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.skills-track {
+    display: flex;
+    padding-top: 80px;
+    gap: 20px; /* Espacement entre les images */
+    animation: scroll 90s linear infinite; /* Animation infinie */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.skills-item {
+    flex: 0 0 auto;
+}
+
+.skills-item img {
+    height: 400px;
+    width: auto;
+    object-fit: contain;
+}
