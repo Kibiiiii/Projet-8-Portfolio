@@ -39,7 +39,7 @@ $gallery-bg: rgba(246, 246, 246, 1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -48,8 +48,8 @@ $gallery-bg: rgba(246, 246, 246, 1);
 
 .skills-track {
     display: flex;
-    padding-top: 50px;
-    gap: 0;
+    padding-top: 90px;
+    gap: 30px;
     line-height: 0;
     animation: scroll-left 400s linear infinite;
 }
@@ -57,8 +57,8 @@ $gallery-bg: rgba(246, 246, 246, 1);
 .skills-track-reverse {
     display: flex;
     align-self: flex-start;
-    padding-top: 0;
-    gap: 0;
+    padding-top: 30px;
+    gap: 30px;
     line-height: 0;
     animation: scroll-right 400s linear infinite;
 }
@@ -86,7 +86,7 @@ $gallery-bg: rgba(246, 246, 246, 1);
 }
 
 .skills-item img {
-    height: 300px;
+    height: 130px;
     width: auto;
     object-fit: contain;
     margin: 0;
