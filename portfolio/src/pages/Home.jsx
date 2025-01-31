@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import Banner from "../components/Banner-Home.jsx";
 import Inserts from "../components/Inserts-Home.jsx";
 import ChibisKibi from "../components/Chibi-Home.jsx";
-import chibiKibi from "../assets/images/chibi-kibi.png";
-import chibiKibiHearts from "../assets/images/chibi-kibi-hearts.png";
-import chibiKibiHey from "../assets/images/chibi-kibi-hey.png";
+import chibiKibi from "../assets/images/chibi-kibi.webp";
+import chibiKibiHearts from "../assets/images/chibi-kibi-hearts.webp";
+import chibiKibiHey from "../assets/images/chibi-kibi-hey.webp";
 
 function Home() {
     return (

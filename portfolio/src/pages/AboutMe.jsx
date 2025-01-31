@@ -1,7 +1,7 @@
 import React from "react";
 import Datas from "../datas/aboutme.json";
-import Frame from "../assets/images/frame-photo.png";
-import Me from "../assets/images/me.JPG";
+import Frame from "../assets/images/frame-photo.webp";
+import Me from "../assets/images/me.webp";
 import BackHome from "../components/Back-Home";
 
 const AboutMe = () => {

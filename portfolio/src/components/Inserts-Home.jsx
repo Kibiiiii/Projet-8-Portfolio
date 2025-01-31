@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/inserts.scss'
-import insertsImage from '../assets/images/inserts.png';
+import insertsImage from '../assets/images/inserts.webp';
 
 function InsertsHome({ title }) {
     return (

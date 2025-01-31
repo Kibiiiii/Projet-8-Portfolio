@@ -1,9 +1,9 @@
 import React from 'react';
-import footerLinkInstagram from "../assets/images/instagram.png";
-import footerLinkLinkedin from "../assets/images/linkedin.png";
-import footerLinkGithub from "../assets/images/github.png";
-import footerLinkCv from "../assets/images/cv.png";
-import footerLinkContact from "../assets/images/contact.png";
+import footerLinkInstagram from "../assets/images/instagram.webp";
+import footerLinkLinkedin from "../assets/images/linkedin.webp";
+import footerLinkGithub from "../assets/images/github.webp";
+import footerLinkCv from "../assets/images/cv.webp";
+import footerLinkContact from "../assets/images/contact.webp";
 
 const FooterLink = ({ image, link }) => {
     if (!image) {

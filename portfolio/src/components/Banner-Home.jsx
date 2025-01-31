@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/home.scss'
-import bannerImage from '../assets/images/banner-accueil.jpg';
+import bannerImage from '../assets/images/banner-accueil.webp';
 
 function BannerHome({ title }) {
     return (
