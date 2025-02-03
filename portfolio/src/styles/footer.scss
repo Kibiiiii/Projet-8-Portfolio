@@ -2,11 +2,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 130px;
-    @media (max-width: 440px) {
-        padding-top: 20px;
-        @media (max-width: 370px) {
-            padding-top: 0px;
+    padding-top: 240px;
+    gap: 100px;
+    @media (max-width: 1000px) {
+        padding-top: 300px;
+        @media (max-width: 970px) {
+            padding-top: 320px;
+                @media (max-width: 960px) {
+                    padding-top: 380px;
+                        @media (max-width: 800px) {
+                            gap: 80px;
+                            padding-top: 400px;
+                                @media (max-width: 700px) {
+                                    gap: 50px;
+                                    padding-top: 400px;
+                                        @media (max-width: 550px) {
+                                            gap: 30px;
+                                            padding-top: 420px;
+                                            @media (max-width: 460px) {
+                                                gap: 20px;
+                                                padding-top: 430px;
+                                                @media (max-width: 370px) {
+                                                    gap: 10px;
+                                                    padding-top: 450px;
+                                                }
+                                            }
+                                        }
+                                }
+                        }
+                }
         }
     }
 }
@@ -16,27 +40,31 @@
     justify-content: center;
     align-items: center;
         img {
+            width: 180px;
             object-fit: contain;
             cursor: pointer;
                     @media (max-width: 1700px) {
-                        width: 320px;
+                        width: 170px;
                             @media (max-width: 1500px) {
-                                width: 300px;
+                                width: 160px;
                                 @media (max-width: 1280px) {
-                                    width: 250px;
+                                    width: 140px;
                                     @media (max-width: 1065px) {
-                                        width: 200px;
-                                        @media (max-width: 860px) {
-                                            width: 150px;
-                                            @media (max-width: 650px) {
-                                                width: 100px;
-                                                @media (max-width: 440px) {
+                                        width: 120px;
+                                        @media (max-width: 1000px) {
+                                            width: 90px;
+                                                @media (max-width: 860px) {
                                                     width: 80px;
-                                                    @media (max-width: 360px) {
-                                                        width: 60px;
-                                                    }
+                                                        @media (max-width: 650px) {
+                                                            width: 70px;
+                                                                @media (max-width: 440px) {
+                                                                    width: 60px;
+                                                                        @media (max-width: 360px) {
+                                                                            width: 50px;
+                                                                        }
+                                                                }
+                                                        }
                                                 }
-                                            }
                                         }
                                     }
                                 }

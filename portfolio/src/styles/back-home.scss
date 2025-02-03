@@ -1,8 +1,8 @@
 .cherry-back {
     position: absolute;
-    top: -50px;
-    left: -80px;
-    width: 300px;
+    top: 10px;
+    left: 10px;
+    width: 100px;
     cursor: pointer;
     animation: zoomEffect 3s infinite alternate ease-in-out;
     @media (max-width: 500px) {
