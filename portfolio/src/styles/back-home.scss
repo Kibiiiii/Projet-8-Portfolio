@@ -5,16 +5,18 @@
     width: 100px;
     cursor: pointer;
     animation: zoomEffect 3s infinite alternate ease-in-out;
-    @media (max-width: 500px) {
-        width: 250px;
-        @media (max-width: 360px) {
-            top: -30px;
-            left: -60px;
-            width: 200px;
-        }
+    @media (max-width: 600px) {
+        width: 80px;
+            @media (max-width: 520px) {
+                top: 8px;
+                left: 8px;
+                width: 60px;
+                    @media (max-width: 360px) {
+                        width: 50px;
+                    }
+            }
     }
 }
-
 @keyframes zoomEffect {
     0% {
         transform: scale(1);
