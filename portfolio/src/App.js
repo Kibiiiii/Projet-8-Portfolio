@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer.jsx";
-import ContactForm from './components/Contact-Form.jsx';
+import Form from './pages/Form.jsx';
 import Error404 from "./pages/Error404.jsx";
 import Home from "./pages/Home.jsx";
 import AboutMe from "./pages/AboutMe.jsx";
@@ -15,6 +15,7 @@ import "./styles/projets.scss";
 import "./styles/skills.scss";
 import "./styles/404.scss";
 import "./styles/footer.scss";
+import "./styles/form.scss";
 
 const App = () => {
     return (
@@ -26,7 +27,7 @@ const App = () => {
                         <Route path="/aboutme" element={<AboutMe />} />
                         <Route path="/projets/:id" element={<Projets />} />
                         <Route path="/skills" element={<Skills />} /> 
-                        <Route path="/contact" element={<ContactForm />} />
+                        <Route path="/form" element={<Form />} />
                         <Route path="*" element={<Error404 />} />
                     </Routes>
                 </div>
