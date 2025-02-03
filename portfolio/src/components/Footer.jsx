@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from "react";
 import footerLinkInstagram from "../assets/images/instagram.webp";
 import footerLinkLinkedin from "../assets/images/linkedin.webp";
 import footerLinkGithub from "../assets/images/github.webp";
 import footerLinkCv from "../assets/images/cv.webp";
 import footerLinkContact from "../assets/images/contact.webp";
+import Form from "../pages/Form";
 
-const FooterLink = ({ image, link }) => {
+
+const FooterLink = ({ image, link, onClick }) => {
     if (!image) {
         console.log();
         return null;
@@ -13,7 +15,7 @@ const FooterLink = ({ image, link }) => {
 
     return (
         <div className="footer-link">
-            <a href={link} target="_blank" rel="noopener noreferrer">
+            <a href={link} onClick={onClick} target="_blank" rel="noopener noreferrer">
                 <img src={image} alt="footer link" />
             </a>
         </div>
@@ -21,13 +23,20 @@ const FooterLink = ({ image, link }) => {
 };
 
 const Footer = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const toggleModal = (e) => {
+        e.preventDefault(); // Empêche le lien d'avoir un comportement par défaut
+        setIsModalOpen(!isModalOpen);
+    };
+
     return (
         <div className="footer-links">
             <div className="link-item">
                 <FooterLink image={footerLinkCv} link="/cv.pdf" />
             </div>
             <div className="link-item">
-                <FooterLink image={footerLinkContact} link="#" />
+                <FooterLink image={footerLinkContact} link="#" onClick={toggleModal} />
             </div>
             <div className="link-item">
                 <FooterLink
@@ -47,12 +56,10 @@ const Footer = () => {
                     link="https://github.com/Kibiiiii"
                 />
             </div>
+
+            {isModalOpen && <Form onClose={() => setIsModalOpen(false)} />}
         </div>
     );
 };
 
 export default Footer;
-
-
-
-
