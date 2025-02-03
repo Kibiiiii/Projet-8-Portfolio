@@ -7,18 +7,42 @@ $gallery-bg: rgba(246, 246, 246, 1);
 
 .inserts-home {
     position: relative;
-    width: 100%;
+    width: 900px;
+    height: auto;
+    padding-top: 30px;
     cursor: pointer;
     transition: transform 0.2s ease;
-    @media (max-width: 497px) {
-        width: 100%;
-        @media (max-width: 400px) {
-            width: 100%;
-            @media (max-width: 320px) {
-                width: 100%;
-            }
+        @media (max-width: 1200px) {
+            width: 850px;
+            height: auto;
+                @media (max-width: 1140px) {
+                    width: 800px;
+                    height: auto;
+                    @media (max-width: 1080px) {
+                        width: 720px;
+                        height: auto;
+                        @media (max-width: 980px) {
+                            width: 650px;
+                            height: auto;
+                        @media (max-width: 880px) {
+                            width: 550px;
+                            height: auto;
+                                @media (max-width: 780px) {
+                                    width: 400px;
+                                        @media (max-width: 660px) {
+                                            width: 300px;
+                                            left: 40px;
+                                            @media (max-width: 470px) {
+                                                width: 200px;
+                                                left: 80px;
+                                            }
+                                        }
+                                }
+                        }
+                }
         }
-    }
+}
+        }
 
     &:hover {
         transform: scale(1.05);
@@ -29,11 +53,11 @@ $gallery-bg: rgba(246, 246, 246, 1);
 .insert-title {
     font-family: $primary-font;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 55%;
     transform: translate(-50%, -50%);
     color: $secondary-color;
-    font-size: 50px;
+    font-size: 48px;
     text-shadow: -1px -1px 0 $primary-color,
     1px -1px 0 $primary-color,
     -1px 1px 0 $primary-color,
@@ -41,20 +65,24 @@ $gallery-bg: rgba(246, 246, 246, 1);
     cursor: pointer;
         @media (max-width: 1600px) {
             font-size: 40px;
-                @media (max-width: 1314px) {
-                    font-size: 30px;
+            top: 60%;
                         @media (max-width: 1080px) {
-                            font-size: 20px;
-                                @media (max-width: 812px) {
-                                    font-size: 18px;
-                                        @media (max-width: 754px) {
-                                            font-size: 15px;
-                                                @media (max-width: 680px) {
-                                                    font-size: 10px;
-                                                    @media (max-width: 497px) {
-                                                        font-size: 8px;
-                                                        @media (max-width: 400px) {
-                                                            font-size: 6px;
+                            font-size: 40px;
+                                @media (max-width: 980px) {
+                                    font-size: 35px;
+                                        @media (max-width: 880px) {
+                                            font-size: 28px;
+                                                @media (max-width: 780px) {
+                                                    font-size: 20px;
+                                                    top: 65%;
+                                                    @media (max-width: 660px) {
+                                                        font-size: 12px;
+                                                        top: 68%;
+                                                        left: 65%;
+                                                        @media (max-width: 470px) {
+                                                            font-size: 10px;
+                                                            top: 73%;
+                                                            left: 90%;
                                                                 @media (max-width: 320px) {
                                                                     font-size: 5px;
                                                                 }
@@ -64,7 +92,6 @@ $gallery-bg: rgba(246, 246, 246, 1);
                                         }
                                 }
                         }       
-                }
         }
 }
 
@@ -79,37 +106,48 @@ $gallery-bg: rgba(246, 246, 246, 1);
     align-items: center;
     justify-content: space-between; 
     max-width: 1200px;
+    gap: 80px;
+    @media (max-width: 1200px) {
+        gap: 50px;
+        @media (max-width: 1080px) {
+            gap: 30px;
+            @media (max-width: 980px) {
+                gap: 10px;
+                @media (max-width: 660px) {
+                    gap: 80px;
+                    @media (max-width: 470px) {
+                        gap: 150px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .chibi-kibi {
-    width: 220px;
-    height: auto;
-    cursor: pointer;
         @media (max-width: 1400px) {
             width: 220px;
             padding: 20px;
-                @media (max-width: 1024px) {
-                    width: 220px;
-                    padding: 20px;
-                        @media (max-width: 768px) {
-                            width: 220px;
-                            padding: 20px;
-                                @media (max-width: 400px) {
-                                    width: 220px;
-                                    padding: 20px;
-                                        @media (max-width: 320px) {
-                                            width: 220px;
-                                        }
-                                }
-                        }
-                }
         }
 }
 
 .chibi-kibi img {
-    width: 100%;
+    width: 140px;
     height: auto;
-}
+    padding-top: 70px;
+        @media (max-width: 880px) {
+            width: 120px;
+            padding-top: 50px;
+            @media (max-width: 660px) {
+                width: 80px;
+                padding-top: 40px;
+                @media (max-width: 470px) {
+                    width: 50px;
+                    padding-top: 40px;
+                }
+            }
+        }
+    }
 
 
 
