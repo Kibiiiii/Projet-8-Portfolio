@@ -12,11 +12,11 @@ $gallery-bg: #ffeced;
     text-align: center;
     font-size: 60px;
     margin-bottom: 20px;
-    color: $secondary-color;
-    text-shadow: -1px -1px 0 $primary-color, 
-    1px -1px 0 $primary-color, 
-    -1px 1px 0 $primary-color, 
-    1px 1px 0 $primary-color;
+    color: $gallery-bg;
+    text-shadow: -1px -1px 0 #c54f4f, 
+    1px -1px 0 #c54f4f, 
+    -1px 1px 0 #c54f4f, 
+    1px 1px 0 #c54f4f;
         @media (max-width: 600px) {
             font-size: 40px;
             @media (max-width: 400px) {

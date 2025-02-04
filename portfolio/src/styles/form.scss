@@ -1,0 +1,87 @@
+$primary-font: 'Sour_Gummy';
+$primary-color: #c54f4f;
+$secondary-color: white;
+$box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$modal-bg: rgba(0, 0, 0, 0.3);
+$form-bg: #e4b2b3;
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $modal-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-container {
+    position: relative;
+    width: 630px;
+    max-height: calc(100vh - 20px);
+    padding: 50px;
+    border-radius: 10px;
+    background: $form-bg;
+    box-shadow: $box-shadow;
+    overflow: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: $primary-font;
+    color: $secondary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px -1px 0 $primary-color, -1px 1px 0 $primary-color, 1px 1px 0 $primary-color;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    label {
+        font-family: $primary-font;
+        color: $secondary-color;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .submit-button {
+        background: $primary-color;
+        color: $secondary-color;
+        font-family: $primary-font;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+            background: darken($primary-color, 15%);
+        }
+    }
+}
