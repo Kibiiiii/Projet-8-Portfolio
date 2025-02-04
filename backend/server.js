@@ -1,41 +1,22 @@
-const express = require("express");
-const cors = require("cors");
-const nodemailer = require("nodemailer");
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import emailRoutes from "./routes/emailRoutes.js"; // 🔹 Assure-toi du bon chemin
 
+dotenv.config();
 const app = express();
+
+// ✅ Middleware pour lire le JSON
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.post("/send-email", async (req, res) => {
-    const { name, email, message } = req.body;
-    
-    if (!name || !email || !message) {
-        return res.status(400).json({ error: "Tous les champs sont requis" });
-    }
+// ✅ Utilisation des routes
+app.use("/api", emailRoutes); 
 
-    // Configuration du transport Nodemailer
-    let transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-            user: "tonemail@gmail.com",
-            pass: "tonMotDePasse",
-        },
-    });
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log(`🚀 Serveur backend sur port ${PORT}`));
 
-    let mailOptions = {
-        from: email,
-        to: "kibishiigaming@gmail.com",
-        subject: `Message de ${name}`,
-        text: message,
-    };
 
-    try {
-        await transporter.sendMail(mailOptions);
-        res.json({ success: true, message: "Email envoyé avec succès !" });
-    } catch (error) {
-        res.status(500).json({ error: "Erreur lors de l'envoi de l'email" });
-    }
-});
 
-app.listen(3001, () => console.log("Serveur backend sur port 3001"));
 
