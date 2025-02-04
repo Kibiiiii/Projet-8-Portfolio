@@ -14,11 +14,11 @@ export const sendEmail = async (req, res) => {
     }
 
     const msg = {
-        to: email, // Destinataire
-        from: process.env.EMAIL_FROM, // Expéditeur (doit être validé sur SendGrid)
+        to: email,
+        from: process.env.EMAIL_FROM,
         subject: subject,
         text: message,
-        html: `<p>${message}</p>`, // Permet d'envoyer du HTML dans l'email
+        html: `<p>${message}</p>`,
     };
 
     try {

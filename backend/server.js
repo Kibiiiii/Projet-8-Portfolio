@@ -1,5 +1,5 @@
 import express from "express";
-import cors from "cors";  // Import de CORS
+import cors from "cors"; 
 import dotenv from "dotenv";
 import emailRoutes from "./routes/emailRoutes.js";
 
@@ -9,9 +9,9 @@ const app = express();
 
 // ✅ Middleware CORS
 app.use(cors({
-    origin: "http://localhost:3000",  // Permet seulement l'accès depuis le frontend local (port 3000)
-    methods: ["GET", "POST"],  // Méthodes autorisées
-    allowedHeaders: ["Content-Type"],  // En-têtes autorisés
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
 }));
 
 // ✅ Middleware pour lire le JSON

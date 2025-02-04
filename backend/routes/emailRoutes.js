@@ -6,4 +6,4 @@ const router = express.Router();
 // Route pour envoyer un email
 router.post("/send-email", sendEmail);
 
-export default router;  // ✅ Utilise 'export default'
+export default router;
