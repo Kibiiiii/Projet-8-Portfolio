@@ -5,16 +5,17 @@ import "../styles/form.scss";
 function ContactForm({ onClose }) {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
-            const response = await fetch("http://localhost:3001/send-email", {
+            const response = await fetch("http://localhost:3001/api/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ name, email, message }),
+                body: JSON.stringify({ name, email, subject, message }),
             });
 
             if (response.ok) {
@@ -22,6 +23,7 @@ function ContactForm({ onClose }) {
                 setName("");
                 setEmail("");
                 setMessage("");
+                setSubject("");
                 onClose();
             } else {
                 alert("Erreur d'envoi.");
@@ -59,6 +61,16 @@ function ContactForm({ onClose }) {
                             id="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="subject">Sujet:</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
                             required
                         />
                     </div>
