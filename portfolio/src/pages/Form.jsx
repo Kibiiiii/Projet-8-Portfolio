@@ -7,10 +7,29 @@ function ContactForm({ onClose }) {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form submitted:", { name, email, message });
-        onClose(); // Ferme la modale après soumission
+
+        try {
+            const response = await fetch("http://localhost:3000/send-email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, email, message }),
+            });
+
+            if (response.ok) {
+                alert("E-mail envoyé !");
+                setName("");
+                setEmail("");
+                setMessage("");
+                onClose();
+            } else {
+                alert("Erreur d'envoi.");
+            }
+        } catch (error) {
+            console.error("Erreur:", error);
+            alert("Une erreur est survenue.");
+        }
     };
 
     return (
