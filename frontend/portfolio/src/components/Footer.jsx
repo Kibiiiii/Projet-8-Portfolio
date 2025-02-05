@@ -26,7 +26,7 @@ const Footer = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const toggleModal = (e) => {
-        e.preventDefault(); // Empêche le lien d'avoir un comportement par défaut
+        e.preventDefault();
         setIsModalOpen(!isModalOpen);
     };
 
