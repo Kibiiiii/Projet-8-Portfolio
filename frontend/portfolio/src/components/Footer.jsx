@@ -33,7 +33,8 @@ const Footer = () => {
     return (
         <div className="footer-links">
             <div className="link-item">
-                <FooterLink image={footerLinkCv} link="/cv.pdf" />
+            <FooterLink image={footerLinkCv} link="/cv.pdf" />
+
             </div>
             <div className="link-item">
                 <FooterLink image={footerLinkContact} link="#" onClick={toggleModal} />
