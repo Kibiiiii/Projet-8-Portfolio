@@ -9,14 +9,19 @@ import Form from "../pages/Form";
 
 const FooterLink = ({ image, link, onClick }) => {
     if (!image) {
-        console.log();
         return null;
     }
 
     return (
         <div className="footer-link">
             <a href={link} onClick={onClick} target="_blank" rel="noopener noreferrer">
-                <img src={image} alt="footer link" />
+                <img 
+                    src={image} 
+                    alt="footer link" 
+                    width="140" 
+                    height="104" 
+                    loading="lazy"  // Ajout du lazy loading
+                />
             </a>
         </div>
     );
@@ -33,8 +38,7 @@ const Footer = () => {
     return (
         <div className="footer-links">
             <div className="link-item">
-            <FooterLink image={footerLinkCv} link="/cv.pdf" />
-
+                <FooterLink image={footerLinkCv} link="/cv.pdf" />
             </div>
             <div className="link-item">
                 <FooterLink image={footerLinkContact} link="#" onClick={toggleModal} />

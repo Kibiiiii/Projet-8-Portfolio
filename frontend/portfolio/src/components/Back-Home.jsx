@@ -4,13 +4,18 @@ import "../styles/back-home.scss";
 
 const BackHome = () => {
     return (
-        <>
-            <div className="back-home">
-                <a href="/" className="back-to-home">
-                <img className="cherry-back" src={Back} alt="Fleur" />
-                </a>
-            </div>
-        </>
+        <div className="back-home">
+            <a href="/" className="back-to-home">
+                <img 
+                    className="cherry-back" 
+                    src={Back} 
+                    alt="Fleur" 
+                    width="100" 
+                    height="74" 
+                    loading="lazy"
+                />
+            </a>
+        </div>
     );
 };
 
