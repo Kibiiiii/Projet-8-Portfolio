@@ -8,7 +8,7 @@ function ChibisKibi({ image }) {
                 alt="Kibi" 
                 width="140" 
                 height="175" 
-                loading="lazy"  // Ajout du lazy loading
+                loading="lazy"
             />
         </div>
     );

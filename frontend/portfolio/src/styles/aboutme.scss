@@ -41,14 +41,14 @@ html {
     }
 
     &-container {
-        display: flex; /* Aligne les éléments côte à côte */
+        display: flex;
         align-items: center;
         justify-content: flex-start;
         max-width: 800px;
         gap: 120px;
         margin: 0 auto;
         top: 80px;
-        position: relative; /* Nécessaire pour le positionnement absolu du cadre */
+        position: relative;
             @media (max-width: 960px) {
                 flex-direction: column;
                 align-items: stretch;
@@ -61,10 +61,10 @@ html {
     &-frame {
         width: 450px;
         height: 400px;
-        position: absolute; /* Positionné par rapport au conteneur parent */
+        position: absolute;
         top: 0;
         left: 0;
-        z-index: 2; /* Le cadre se place au-dessus de l'image */
+        z-index: 2;
         @media (max-width: 960px) {
             left: 100px;
             @media (max-width: 650px) {
@@ -97,13 +97,13 @@ html {
 
     &-text {
         font-family: 'Sour_Gummy';
-        margin-left: 10px; /* Espace entre le texte et l'image */
+        margin-left: 10px;
         font-size: 1rem;
         line-height: 1.8;
         text-align: justify;
         max-width: 600px;
         white-space: pre-line;
-        position: relative; /* Le texte reste dans le flux du conteneur */
+        position: relative;
         z-index: 1;
         top: 10px;
             @media (max-width: 960px) {
@@ -133,8 +133,8 @@ html {
     top: -240px;
     left: 20px;
     object-fit: cover;
-    position: relative; /* Nécessaire pour que le cadre se positionne correctement par rapport à l'image */
-    z-index: 1; /* L'image est en dessous du cadre */
+    position: relative;
+    z-index: 1;
         @media (max-width: 960px) {
             top: 20px;
             left: 120px;

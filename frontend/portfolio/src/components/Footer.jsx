@@ -20,7 +20,7 @@ const FooterLink = ({ image, link, onClick }) => {
                     alt="footer link" 
                     width="140" 
                     height="104" 
-                    loading="lazy"  // Ajout du lazy loading
+                    loading="lazy"
                 />
             </a>
         </div>
