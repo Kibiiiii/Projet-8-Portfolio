@@ -26,7 +26,7 @@ const Skills = () => {
         <>
             <BackHome />
             <div className="skills">
-            <h1 className="skills-title">Mes Compétences</h1>
+                <h1 className="skills-title">Mes Compétences</h1>
                 <div className="skills-track">
                     {repeatedLogos.map((logo, index) => (
                         <div className="skills-item" key={`line1-${index}`}>
@@ -41,6 +41,12 @@ const Skills = () => {
                             <img src={logo} alt="Skill logo" />
                         </div>
                     ))}
+                </div>
+                
+                <div className="skills-link">
+                    <a href="https://www.francecompetences.fr/recherche/rncp/38145/#anchor2" target="_blank" rel="noopener noreferrer">
+                        Voir plus de détails sur mes compétences
+                    </a>
                 </div>
             </div>
         </>

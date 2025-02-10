@@ -118,3 +118,20 @@ $gallery-bg: rgba(246, 246, 246, 1);
     }
 }
 
+.skills-link, 
+.skills-link a {
+    font-family: 'Sour_Gummy';
+    padding-top: 90px;
+    color: $primary-color;
+    font-size: 20px;
+    @media (max-width: 800px) {
+        font-size: 15px;
+            @media (max-width: 450px) {
+                font-size: 10px;
+                    @media (max-width: 340px) {
+                        font-size: 8px;
+            }       
+        }
+    }
+}
+
