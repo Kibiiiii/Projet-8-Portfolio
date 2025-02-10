@@ -14,27 +14,21 @@ $gallery-bg: rgba(246, 246, 246, 1);
     transition: transform 0.2s ease;
         @media (max-width: 1200px) {
             width: 850px;
-            height: auto;
                 @media (max-width: 1140px) {
                     width: 800px;
-                    height: auto;
                         @media (max-width: 1080px) {
                             width: 720px;
-                            height: auto;
                                 @media (max-width: 980px) {
-                                    width: 650px;
-                                    height: auto;
-                                        @media (max-width: 880px) {
-                                            width: 550px;
-                                            height: auto;
+                                    width: 450px;
+                                        @media (max-width: 800px) {
+                                            width: 500px;
                                                 @media (max-width: 780px) {
                                                     width: 400px;
+                                                    padding-top: 20px;
                                                         @media (max-width: 660px) {
-                                                            width: 300px;
-                                                            left: 40px;
-                                                                @media (max-width: 470px) {
-                                                                    width: 200px;
-                                                                    left: 80px;
+                                                            width: 350px;
+                                                                @media (max-width: 400px) {
+                                                                    width: 250px;
                                                                 }
                                                         }
                                                 }
@@ -66,25 +60,21 @@ $gallery-bg: rgba(246, 246, 246, 1);
             font-size: 40px;
             top: 60%;
                 @media (max-width: 1080px) {
-                    font-size: 40px;
+                    font-size: 38px;
                         @media (max-width: 980px) {
-                            font-size: 35px;
+                            font-size: 24px;
+                            top: 65%;
                                 @media (max-width: 880px) {
-                                    font-size: 28px;
+                                    font-size: 22px;
                                         @media (max-width: 780px) {
                                             font-size: 20px;
-                                            top: 65%;
+                                            top: 60%;
                                                 @media (max-width: 660px) {
-                                                    font-size: 12px;
-                                                    top: 68%;
-                                                    left: 65%;
-                                                        @media (max-width: 470px) {
-                                                            font-size: 10px;
-                                                            top: 73%;
-                                                            left: 90%;
-                                                                @media (max-width: 320px) {
-                                                                    font-size: 5px;
-                                                                }
+                                                    font-size: 18px;
+                                                    top: 65%;
+                                                        @media (max-width: 400px) {
+                                                            font-size: 12px;
+                                                            top: 65%;
                                                         }
                                                 }
                                         }
@@ -106,27 +96,22 @@ $gallery-bg: rgba(246, 246, 246, 1);
     justify-content: space-between; 
     max-width: 1200px;
     gap: 80px;
-        @media (max-width: 1200px) {
-            gap: 50px;
-                @media (max-width: 1080px) {
-                    gap: 30px;
-                        @media (max-width: 980px) {
-                            gap: 10px;
-                                @media (max-width: 660px) {
-                                    gap: 80px;
-                                        @media (max-width: 470px) {
-                                            gap: 150px;
-                                        }
-                                }
-                        }
-                }
+    @media (max-width: 1250px) {
+        gap: 20px;
+        @media (max-width: 800px) {
+            gap: 10px;
         }
+    }
+    
 }
 
 .chibi-kibi {
         @media (max-width: 1400px) {
             width: 220px;
             padding: 20px;
+            @media (max-width: 800px) {
+                display: none;
+            }
         }
 }
 
@@ -137,14 +122,6 @@ $gallery-bg: rgba(246, 246, 246, 1);
         @media (max-width: 880px) {
             width: 120px;
             padding-top: 50px;
-                @media (max-width: 660px) {
-                    width: 80px;
-                    padding-top: 40px;
-                        @media (max-width: 470px) {
-                            width: 50px;
-                            padding-top: 40px;
-                        }
-                }   
         }
 }
 
