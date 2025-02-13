@@ -1,24 +1,51 @@
-# Logs
+# --- 🔹 Logs et fichiers système ---
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
 .DS_Store
+Thumbs.db
+
+# --- 🔹 Dépendances et build ---
+node_modules/
+dist/
+build/
+
+# --- 🔹 Cache et fichiers temporaires ---
+.cache/
+.vite/
+.vitepress/
+
+# --- 🔹 Fichiers d’environnement (⚠️ Ne pas versionner si tu utilises des clés API) ---
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# --- 🔹 Vercel (évite d’envoyer les fichiers auto-générés) ---
+.vercel/
+
+# --- 🔹 Éditeurs de code (VS Code, JetBrains, etc.) ---
+.vscode/*
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# --- 🔹 Git et fichiers inutiles ---
+.git/
+.gitignore
+.gitattributes
+
+# --- 🔹 Autres ---
+/public/*.cache
+/public/*.map
+
+
+.vercel

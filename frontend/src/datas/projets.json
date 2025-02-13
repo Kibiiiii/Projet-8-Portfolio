@@ -2,7 +2,7 @@
 	{
 		"id": "mk1",
 		"title": "Booki",
-		"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/portfolio/src/assets/images/p2-booki.png",
+		"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/src/assets/images/p2-booki.png",
 		"description": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS, mission principale sera d'intégrer l'interface responsive de leur site. Vous aurez à disposition les maquettes Figma pour mobile, tablette et desktop, ainsi que les images et une note de synthèse sur les spécificités du projet.",
 		"objectifs": "Implémenter une interface responsive avec HTML et CSS, Intégrer du contenu conformément à une maquette avec HTML et CSS, Versionner son projet avec Git et Github, Installer un environnement de développement front-end"
 	},
@@ -10,7 +10,7 @@
 	{
 		"id": "mk2",
 		"title": "Sophie Bluel",
-		"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/portfolio/src/assets/images/p3-sophie-bluel.png",
+		"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/src/assets/images/p3-sophie-bluel.png",
 		"description": "Créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.",
 		"objectifs": "Récupérer les données utilisateurs dans le JavaScript via des formulaires, Gérer les événements utilisateurs avec JavaScript, Manipuler les éléments du DOM avec JavaScript."
 	},
@@ -18,7 +18,7 @@
 	{
 		"id": "mk3",
 		"title": "Nina Carducci",
-		"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/portfolio/src/assets/images/p4-nina-carducci.png",
+		"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/src/assets/images/p4-nina-carducci.png",
 		"description": "Optimiser le référencement d’un site, en améliorant sa performance et son accessibilité.",
 		"objectifs": "Optimiser les performances d’un site web, débugger un site web grâce aux Chrome DevTools, Rédiger un cahier de recette pour tester un site."
 	},
@@ -26,7 +26,7 @@
 	{
 	"id": "mk4",
 	"title": "Kasa",
-	"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/portfolio/src/assets/images/p4-kasa.png",
+	"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/src/assets/images/p4-kasa.png",
 	"description": " Implémenter le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.",
 	"objectifs": "Initialiser une application avec Create React App, Configurer la navigation entre les pages de l'application avec React Router, Développer des éléments de l'interface d'un site web grâce à des composants React, Mettre en œuvre des animations CSS, Développer une interface web avec Sass."
 },
@@ -34,7 +34,7 @@
 {
 	"id": "mk5",
 	"title": "Mon Vieux Grimoire",
-	"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/portfolio/src/assets/images/p5-mon-vieux-grimoire.png",
+	"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/src/assets/images/p5-mon-vieux-grimoire.png",
 	"description": "Développer le back-end d'un site de notation de livres. Créer un serveur avec Express et de le connecter à une base de données MongoDB. Cela impliquera la mise en place de la structure du serveur et la gestion de la communication entre le serveur et la base de données.",
 	"objectifs": "Implémenter un modèle logique de données conformément à la réglementation, Mettre en œuvre des opérations CRUD de manière sécurisée, Stocker des données de manière sécurisée."
 },
@@ -42,7 +42,7 @@
 {
 	"id": "mk6",
 	"title": "Menu Maker",
-	"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/portfolio/src/assets/images/p6-menu-maker.png",
+	"cover": "https://raw.githubusercontent.com/Kibiiiii/Projet-8-Portfolio/refs/heads/main/frontend/src/assets/images/p6-menu-maker.png",
 	"description": "Planification du développement d'un site web.",
 	"objectifs": "Lire toutes les sections du projet et les documents liés, Prendre des notes sur ce que vous avez compris, Consulter les étapes pour vous guider, Préparer une liste de questions pour votre première session de mentorat."
 }
